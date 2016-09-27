@@ -1,0 +1,291 @@
+html {
+    position: relative;
+    min-height: 100%;
+
+}
+
+body{
+	font-family: 'Hind', sans-serif;
+}
+
+nav{
+	padding: 10px  70px;
+	color: #2A263F;
+}
+
+nav a{
+	color: #2A263F;
+}
+
+header{
+	height: 350px;
+	background-size: cover;
+	background: gray;
+}
+
+
+
+.banner-action{
+	margin-top: 100px;
+	height: 60%;
+}
+
+
+.banner-action h1{
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 38px;
+}
+
+.banner-action a{
+	background-color: transparent;
+	text-transform: uppercase;
+	border: #fff solid 1px;
+	margin-top: 20px;
+	margin-left: 2px;
+	font-weight: bold;
+	border-radius: 2px;
+	padding: 15px 0px;
+}
+
+.banner-action a:hover{
+	background: #fff;
+	color: purple;
+}
+
+.banner-action a i{
+	margin-left: 20px;
+}
+
+
+.top-call-to-action{
+	height: 220px;
+}
+
+.top-call-to-action div{
+	height: 100%;
+
+}
+
+.top-call-to-action div{
+	text-align: center;
+	height: 110%;	
+}
+
+.top-call-to-action div p{
+	text-decoration: none;
+	font-size: 27px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 90px;
+}
+
+.top-call-to-action div a{
+	color: #fff;
+}
+
+
+.top-call-to-action .one{
+	background-image: url('../image/4.jpg');
+	background-size: cover;
+	height: 100%;
+}
+
+.top-call-to-action .two{
+	background-image: url('../image/3.jpg');
+	background-size: cover;
+	height: 100%;
+}
+
+.top-call-to-action .three{
+	background-image: url('../image/2.jpg');
+	background-size: cover;
+	height: 100%;
+}
+
+
+
+.write-up-section{
+	background: #2A263F;
+	height: 230px;
+}
+
+.write-up{
+	height: 100%;
+	background: #2A263F;
+	vertical-align: middle;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 18px;
+}
+
+.write-up p{
+	margin-top: 70px;
+}
+
+.application-step {
+	padding: 10px;
+	width: 70%;
+}	
+
+.application-step .numbers p{
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 5px;
+	padding: 10px;
+	background-color: #2A263F;
+	width: 70%;
+}
+
+.application-step .description{
+	text-transform: uppercase;
+}
+
+.application-step .description h4{
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.application-step .description p{
+	font-size: 13px;
+	line-height: 30px;
+}
+
+.note{
+	font-size: 17px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 50px;
+}
+
+
+footer {
+	background-color: #2A263F;
+	padding: 40px;
+}
+
+footer img {
+	width: 30%;
+}
+
+footer .link-list {
+	margin:0px;
+}
+
+footer .link-list li{
+	list-style: none;
+}
+
+footer .link-list li a{
+	color: #FFF;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+
+
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+		.application-step {
+			padding: 5px;
+			width: 100%;
+		}	
+
+    
+    }
+
+.form{
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+.form .column{
+	margin: 0px;
+	padding: 0px;
+	box-shadow: 0px 1px 1px gray;
+	
+}
+
+.form-heading{
+	background-color: #2A263F;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.form .form-heading h1{
+	padding: 24px;
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.form  .form-body{
+	padding: 24px;
+}
+
+.form  .form-body input, .form  .form-body textarea{
+	border: none;
+	box-shadow: none;
+	border-bottom: solid #2A263F; 
+}
+
+.form  .form-body .columns{
+	margin-bottom: 20px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
