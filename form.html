@@ -5,42 +5,36 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Foundation | Welcome</title>
+		<title>AUN | Application</title>
 		<link rel="stylesheet" href="asset/css/foundation.css">
 		<link rel="stylesheet" href="asset/css/app.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
 		<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
 	</head>
 
 	<body>
 
-	<nav>
-		<ul class="menu" style="" >
-			<li>
-				<a href="#">
-					<img width="50px;" src="asset/image/logo.png">
-				</a>
-			</li>
-		</ul>
+		<nav>
+			<ul class="menu" style="" >
+				<li>
+					<a href="#">
+						<img width="50px;" src="asset/image/logo.png">
+					</a>
+				</li>
+			</ul>
+		</nav>
 
-		<!-- 			
-		<ul class="menu align-right">
-			<li>
-				<a href="#" style="margin-top: 26px;">
-					<span>ADMISSIONS</span>
-					<i style="margin-top: -3px;" class="fa fa-bars" aria-hidden="true"></i>
-				</a>
-			</li>
-		</ul> -->
-	</nav>
 		<header style="background-image: url('asset/image/bg2.png'); background-repeat: no-repeat;">
 			<div class="row">
 				<h1 class="info">
-					Take the <span>first step</span> <br>
-					in securing a rewarding <br>
-					feture 
+					University with <span>Best student</span> 
+					<br>
+					environment in <span>Nigeria</span>
 				</h1>
 			</div>
 		</header>
@@ -53,37 +47,39 @@
 						<h1>kindly fill this form correctly</h1>
 					</div>
 
+					<form action="form.php" method="post">
 					<div class="form-body">
-						<form>
+						
+						<div>
 							<br><br><br>
 							<div class="row">
 								<div class="large-12 columns">
 									<label>
-										<input type="text" placeholder="YOUR NAME" />
+										<input  type="text" name="name" placeholder="Full name" required />
 									</label>
 								</div>
 
 								<div class="large-12 columns">
 									<label>
-										<input type="text" placeholder="YOUR EMAIL" />
+										<input type="email" placeholder="Email" name="email" required>
 									</label>
 								</div>
 
 								<div class="large-12 columns">
 									<label>
-										<input type="text" placeholder="YOUR PHONE NUMBER" />
+										<input  type="tel" placeholder="Phone number" name="phone"  required />
 									</label>
 								</div>
 
 								<div class="large-12 columns">
 									<label>
-										<input type="text" placeholder="Secondary School /A-levels" />
+										<input  type="text" placeholder="Secondary School /A-levels"   required name="credential" >
 									</label>
 								</div>
 
 								<div class="large-12 columns">
 									<label>
-										<input type="text" placeholder="Location of Residence *" />
+										<input  type="text" placeholder="Location of Residence *"   name="address" required />
 									</label>
 								</div>
 
@@ -91,8 +87,8 @@
 								<div class="large-12 columns select-div">
 									<label>
 									Preferred AUN Admissions Events Location
-										<select>
-											<option value="select">Select Location</option>
+										<select required name="location">
+											<option value="">Select Location</option>
 											<option value="lagos">Lagos</option>
 											<option value="uyo">Uyo</option>
 											<option value="yola">Yola</option>
@@ -104,7 +100,7 @@
 								<div class="large-12 columns select-div">
 									<label>
 										how did you hear about AUN
-										<select>
+										<select required name="reference">
 											<option value="blog">Blog</option>
 											<option value="social_media">Social Media</option>
 											<option value="family_and_friends">Family and friends</option>
@@ -115,7 +111,7 @@
 								</div>
 
 							</div>
-						</form>
+						</div>
 					</div>
 					<div class="form-heading">
 						<button>
@@ -123,6 +119,7 @@
 							<i style="margin-left: 20px;" class="fa fa-long-arrow-right" aria-hidden="true"></i>
 						</button>
 					</div>
+					</form>
 
 				</div>
 			</div>
