@@ -18,16 +18,15 @@
 	</head>
 
 	<body>
-
-		<nav>
-			<ul class="menu" style="" >
-				<li>
-					<a href="/">
-						<img width="50px;" src="asset/image/logo.png">
-					</a>
-				</li>
-			</ul>
-		</nav>
+	<nav>
+		<ul class="menu" style="" >
+			<li>
+				<a href="/">
+					<img style="margin-top: -30px; margin-left: -40px; margin-bottom: -30px;"  src="asset/image/aun-logo.png">
+				</a>
+			</li>
+		</ul>
+	</nav>
 
 		<header style="background-image: url('asset/image/bg2.png'); background-repeat: no-repeat;">
 			<div class="row">
