@@ -73,6 +73,10 @@ header .info span{
 	height: 220px;
 }
 
+.top-call-to-action a {
+	color: #fff;
+}
+
 .top-call-to-action div{
 	height: 100%;
 
@@ -244,6 +248,12 @@ only screen and (max-width: 760px),
 			font-weight: bold;
 			border-radius: 2px;
 			padding: 15px 20px;
+		}
+
+
+		footer .link-list li{
+			border: solid #fff 1px;
+			padding: 10px;
 		}
     
     }
