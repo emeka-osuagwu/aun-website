@@ -19,15 +19,15 @@
 
 	<body>
 
-	<nav>
-		<ul class="menu" style="" >
-			<li>
-				<a href="/">
-					<img style="margin-top: -30px; margin-left: -40px; margin-bottom: -30px;"  src="asset/image/aun-logo.png">
-				</a>
-			</li>
-		</ul>
-	</nav>
+		<nav>
+			<ul class="menu" style="" >
+				<li>
+					<a href="/">
+						<img width="50px;" src="asset/image/logo.png">
+					</a>
+				</li>
+			</ul>
+		</nav>
 
 		<header style="background-image: url('asset/image/bg2.png'); background-repeat: no-repeat;">
 			<div class="row">
@@ -90,6 +90,39 @@
 										<select required name="location">
 											<option value="">Select Location</option>
 											<option value="lagos">Lagos</option>
+											<option value="Kano">Kano</option>
+											<option value="Enugu">Enugu</option>
+											<option value="Benue">Benue</option>
+											<option value="Ibadan">Ibadan</option>
+											<option value="Warri">Warri</option>
+											<option value="Nasarawa">Nasarawa</option>
+											<option value="Cross River">Cross River</option>
+											<option value="Kano">Kano</option>
+											<option value="Osun / Ekiti /Akure">Osun / Ekiti /Akure</option>
+											<option value="Bauchi">Bauchi</option>
+											<option value="Delta (Asaba)">Delta (Asaba)</option>
+											<option value="Edo">Edo</option>
+											<option value="Jigawa">Jigawa</option>
+											<option value="Sokoto">Sokoto</option>
+											<option value="Anambra">Anambra</option>
+											<option value="Aba/Abia">Aba/Abia</option>
+											<option value="Kwara (Ilorin)">Kwara (Ilorin)</option>
+											<option value="Bayelsa">Bayelsa</option>
+											<option value="Akwa-Ibom">Akwa-Ibom</option>
+											<option value="Abeokuta">Abeokuta</option>
+											<option value="Gombe">Gombe</option>
+											<option value="Plateau">Plateau</option>
+											<option value="Lagos">Lagos</option>
+											<option value="Kogi">Kogi</option>
+											<option value="Kebbi/Zamfara">Kebbi/Zamfara</option>
+											<option value="Imo">Imo</option>
+											<option value="Port Harcourt">Port Harcourt</option>
+											<option value="Taraba">Taraba</option>
+											<option value="Ebonyi">Ebonyi</option>
+											<option value="Abuja">Abuja</option>
+											<option value="Katsina">Katsina</option>
+											<option value="Borno (Maid)">Borno (Maid)</option>
+											<option value="Niger">Niger</option>
 											<option value="uyo">Uyo</option>
 											<option value="yola">Yola</option>
 											<option value="kaduna">Kaduna</option>
@@ -173,46 +206,3 @@
 		<script type="text/javascript" src="https://intercom.zurb.com/scripts/zcom.js"></script>
 	</body>
 </html>
-
-<?php
-
- 	$servername = "localhost";
- 	$username = "database-username-here";
- 	$password = "your-password-here";
- 	
- 	$db_name = "database-name-here";
-
-	 try {
-	     
-	     $conn = new PDO("mysql:host=$servername;dbname=$db_name", $username, $password);
-	     
-	     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-
-		     if (isset( $_REQUEST['name']) &&  $_REQUEST['name'] != '') 
-		     {
-
-		     	$name = $_REQUEST['name'];
-		     	$email = $_REQUEST['email'];
-		     	$phone = $_REQUEST['phone'];
-		     	$credential = $_REQUEST['credential'];
-		     	$location = $_REQUEST['location'];
-		     	$reference = $_REQUEST['reference'];
-		     	$address = $_REQUEST['address'];
-
-
-				$sql = "INSERT INTO entries (name,email, phone, credential, location, reference, address)
-				VALUES ('$name', '$email', '$phone', '$credential', '$location', '$reference', '$address')";
-			  
-			   	  $conn->exec($sql);
-			     	echo '<script> swal("Awesome!", "Your entries has be received !", "success"); </script>';
-		     }
-
-	     }
-	 catch(PDOException $e)
-	     {
-	     //echo $sql . "<br>" . $e->getMessage();
-	     }
-
-	 $conn = null;
- ?>
